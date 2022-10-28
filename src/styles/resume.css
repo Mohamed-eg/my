@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.resume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background-color: #e20071;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.resume .main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../img/wallpaperflare.com_wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.resume nav {
+  width: 100%;
+}
+
+.resume nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 30px;
+  background: #ff85d013;
+  position: fixed;
+  color: white;
+  -webkit-box-shadow: 0 0 5px  #000 ,inset 0px -2px 5px #000;
+          box-shadow: 0 0 5px  #000 ,inset 0px -2px 5px #000;
+  z-index: 5;
+}
+
+.resume nav ul li {
+  list-style: none;
+}
+
+.resume nav ul li a {
+  position: absolute;
+  padding: 5px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 10px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.199);
+  z-index: 1;
+  -webkit-box-shadow: 0 0 10px 2px #110009, inset 0 0 10px rgba(255, 255, 255, 0.411);
+          box-shadow: 0 0 10px 2px #110009, inset 0 0 10px rgba(255, 255, 255, 0.411);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -webkit-transition: .3s;
+  transition: .3s;
+  text-align: center;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.resume nav ul li a:hover {
+  background: #fff;
+  color: #000;
+  font-weight: 700;
+  -webkit-box-shadow: 0 0 7px #fff;
+          box-shadow: 0 0 7px #fff;
+}
+
+.resume .Me {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.resume .Me .starb {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  background: #fff;
+  z-index: 1;
+  top: 80px;
+}
+
+.resume .Me .star1 {
+  -webkit-animation: Myphoto 2.5s ease-in-out 0s infinite alternate;
+          animation: Myphoto 2.5s ease-in-out 0s infinite alternate;
+}
+
+.resume .Me .star2 {
+  -webkit-animation: Myphoto 2.5s ease-in-out .5s infinite alternate;
+          animation: Myphoto 2.5s ease-in-out .5s infinite alternate;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+.resume .Me .star3 {
+  -webkit-animation: Myphoto 2.5s ease-in-out 1s infinite alternate;
+          animation: Myphoto 2.5s ease-in-out 1s infinite alternate;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.resume .Me .star4 {
+  -webkit-animation: Myphoto 2.5s ease-in-out 1.5s infinite alternate;
+          animation: Myphoto 2.5s ease-in-out 1.5s infinite alternate;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.resume .Me .star5 {
+  -webkit-animation: Myphoto 2.5s ease-in-out 2s infinite alternate;
+          animation: Myphoto 2.5s ease-in-out 2s infinite alternate;
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+.resume .Me .star6 {
+  -webkit-animation: Myphoto 2.5s ease-in-out 2.5s infinite alternate;
+          animation: Myphoto 2.5s ease-in-out 2.5s infinite alternate;
+  -webkit-transform: rotate(75deg);
+          transform: rotate(75deg);
+}
+
+.resume .Me div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50vw;
+  color: #eaf6ffbb;
+}
+
+.resume .Me div h1 {
+  font-family: 'Tangerine', serif;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+.resume .Me div span {
+  color: #ff0d0d;
+}
+
+.resume .Me div p {
+  text-align: center;
+}
+
+.resume .Me small {
+  position: absolute;
+  left: 0;
+}
+
+.resume .Me img {
+  margin-top: 80px;
+  width: 250px;
+  border-radius: 50px 50px 50% 50%;
+  -webkit-filter: drop-shadow(0px 10px 5px #1f0018) saturate(0.7);
+          filter: drop-shadow(0px 10px 5px #1f0018) saturate(0.7);
+  z-index: 3;
+}
+
+.sidepar {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.sidepar li a {
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  color: white;
+  background: rgba(0, 0, 0, 0.137);
+  padding: 10px;
+  border-radius: 50%;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.sidepar li a:hover {
+  color: #a70b59;
+}
+
+@-webkit-keyframes Myphoto {
+  0% {
+    border-radius: 50%  15%;
+  }
+  25% {
+    border-radius: 15% 50%;
+  }
+  50% {
+    border-radius: 50% 15%;
+  }
+  75% {
+    border-radius: 15% 50%;
+  }
+  100% {
+    border-radius: 50% 15%;
+  }
+}
+
+@keyframes Myphoto {
+  0% {
+    border-radius: 50%  15%;
+  }
+  25% {
+    border-radius: 15% 50%;
+  }
+  50% {
+    border-radius: 50% 15%;
+  }
+  75% {
+    border-radius: 15% 50%;
+  }
+  100% {
+    border-radius: 50% 15%;
+  }
+}
+/*# sourceMappingURL=resume.css.map */
