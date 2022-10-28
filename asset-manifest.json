@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Mohamed-eg/my.git/static/css/main.13eed229.css",
+    "main.js": "/Mohamed-eg/my.git/static/js/main.acdd4eb7.js",
+    "static/js/496.cf1e1b54.chunk.js": "/Mohamed-eg/my.git/static/js/496.cf1e1b54.chunk.js",
+    "static/media/1662506224694_1.jpg": "/Mohamed-eg/my.git/static/media/1662506224694_1.d68f55afde64a048d771.jpg",
+    "static/media/wallpaperflare.com_wallpaper.jpg": "/Mohamed-eg/my.git/static/media/wallpaperflare.com_wallpaper.1e6425399b8350e7c062.jpg",
+    "index.html": "/Mohamed-eg/my.git/index.html",
+    "main.13eed229.css.map": "/Mohamed-eg/my.git/static/css/main.13eed229.css.map",
+    "main.acdd4eb7.js.map": "/Mohamed-eg/my.git/static/js/main.acdd4eb7.js.map",
+    "496.cf1e1b54.chunk.js.map": "/Mohamed-eg/my.git/static/js/496.cf1e1b54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.13eed229.css",
+    "static/js/main.acdd4eb7.js"
+  ]
+}
