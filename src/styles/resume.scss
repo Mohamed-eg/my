@@ -1,152 +1,272 @@
-*{
+@import "./var";
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.resume{
+
+.resume {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    background-color: #e20071;
-    height: fit-content;
-    .main{
+    background-color: $mainColor;
+    height: max-content;
+
+    .main {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        background: url('../img/wallpaperflare.com_wallpaper.jpg');
+        background: radial-gradient($mainColor2, $mainColor);
         background-repeat: no-repeat;
         background-size: cover;
+        z-index: 2;
+        height: max-content;
     }
-    nav{
+
+    nav {
         width: 100%;
-        ul{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: row;
-        width: 100%;
-        height: 30px;
-        background: #ff85d013;
-        position: fixed;
-        color: white;
-        box-shadow: 0 0 5px  #000 ,inset 0px -2px 5px #000 ;
-        z-index: 5;
-        li{
-            list-style: none;
-            a{
-                position:absolute;
-                padding: 5px;
-                backdrop-filter: blur(10px);
-                border-radius: 10px;
-                cursor: pointer;
-                background: rgba(0, 0, 0, 0.199);
-                z-index: 1;
-                box-shadow: 0 0 10px 2px #110009, inset 0 0 10px rgba(255, 255, 255, 0.411);
-                backdrop-filter: blur(5px);
-                transition: .3s;
-                text-align: center;
-                transform: translate(-50%);
-            }
-            a:hover{
-                background: #fff;
-                color: #000;
-                font-weight: 700;
-                box-shadow: 0 0 7px #fff;
+
+        .UPUL {
+            display: flex;
+            width: 100%;
+            height: 10px;
+            position: fixed;
+            box-shadow: 0 0 3px $shadoColor, inset 0px -1px 3px $shadoColor;
+            background: $mainColor2;
+            z-index: 5;
+            backdrop-filter: blur(10px);
+            transition: .25s;
+        }
+
+        .transNAv {
+            background: rgba(255, 255, 255, 0.4);
+            height: 20px;
+        }
+
+        .downUL {
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+            width: 100%;
+            height: 30px;
+            background: rgba(255, 255, 255, 0);
+            position: fixed;
+            color: $fontColor;
+
+            z-index: 4;
+
+            li {
+                list-style: none;
+
+                a {
+                    top: 0;
+                    text-decoration: none;
+                    color: #fff;
+                    position: fixed;
+                    padding: 20px 5px 10px 5px;
+                    border-radius: 2px 2px 15px 15px;
+                    cursor: pointer;
+                    background: rgba(0, 0, 0, 0.199);
+                    z-index: 3;
+                    box-shadow: 0px 5px 10px 2px #110009, inset 0 -5px 10px rgba(255, 255, 255, 0.411);
+                    backdrop-filter: blur(10px);
+                    transition: .3s;
+                    text-align: center;
+                    transform: translate(-50%);
+                }
+
+                .visited {
+                    background: #fff;
+                    color: #000;
+                    font-weight: 700;
+                    box-shadow: 0 0 7px #fff;
+                    padding: 35px 5px 10px 5px;
+                }
+
+                a:hover {
+                    background: #fff;
+                    color: #000;
+                    font-weight: 700;
+                    box-shadow: 0 0 7px #fff;
+                }
             }
         }
-        }
-        
-        
+
+
     }
-    .Me{
-        height: 100vh;
+
+    .Me {
+        height: max-content;
         display: flex;
         justify-content: center;
         align-items: center;
-        .starb{
+        padding: 30px;
+        big{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row-reverse;
+        padding: 0 10px;
+        div:nth-child(1) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 30vw;
+            color: $fontColor;
+           .star{
+            position: relative;
+            img {
+                margin-top: $img-marjen;
+                height: $img-hight;
+                // border-radius: 50% 50%;
+                filter: drop-shadow(0px 10px 5px $shadoColor) saturate(.7);
+                z-index: 3;
+                // background:radial-gradient(rgb(128, 255, 0),rgb(0, 128, 255));
+            }
+            .backggrondForimg{
+                position: absolute;
+                margin-top: $img-marjen;
+                padding: $img-hight/2;
+                border-radius: 50%;
+                background:radial-gradient($mainColor,$mainColor2);
+                box-shadow: 0 0 3px $shadoColor ,inset 0 0 3px $shadoColor;
+            }
+           }
+           
+        } h1 {
+                font-family: 'Tangerine', serif;
+                font-size: 48px;
+                text-shadow: 2px 2px 4px rgb(221, 221, 221);
+            }
+
+            span {
+                color: rgb(255, 13, 13);
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+        .starb {
+            // border-radius: 20% 50%;
             width: 250px;
             height: 250px;
             position: absolute;
             background: #fff;
             z-index: 1;
-            top:80px;
+            top: 80px;
         }
-        .star1{
-            animation: Myphoto 2.5s ease-in-out 0s infinite alternate ;
-        }
-        .star2{
-            animation: Myphoto 2.5s ease-in-out .5s infinite alternate ;
-            transform: rotate(15deg);
-        }
-        .star3{
-            animation: Myphoto 2.5s ease-in-out 1s infinite alternate ;
-            transform: rotate(30deg);
-        }
-        .star4{
-            animation: Myphoto 2.5s ease-in-out 1.5s infinite alternate ;
-            transform: rotate(45deg);
-        }
-        .star5{
-            animation: Myphoto 2.5s ease-in-out 2s infinite alternate ;
-            transform: rotate(60deg);
-        }
-        .star6{
-            animation: Myphoto 2.5s ease-in-out 2.5s infinite alternate ;
-            transform: rotate(75deg);
-        }
-            div{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                width: 50vw;
-                color: #eaf6ffbb;
-                h1{
-                    font-family: 'Tangerine', serif;
-                    font-size: 48px;
-                    text-shadow: 4px 4px 4px #aaa;
-                }
-                span{
-                    color: rgb(255, 13, 13);
-                }
-                p{
-                    text-align: center;
-                }
-            }
-            small{
-                position: absolute;
-                left: 0;
-            }
-        img{
-            margin-top: 80px;
-            width: 250px;
-            border-radius: 50px 50px 50% 50%;
-            filter:  drop-shadow(0px 10px 5px rgb(31, 0, 24)) saturate(.7);
-            z-index: 3;
+
+        // .star1 {
+        //     animation: Myphoto 2.5s linear 0s infinite reverse;
+        //     box-shadow: 0 0 10px 1px #17fff3;
+        // }
+
+        // .star2 {
+        //     animation: Myphoto 2.5s linear .25s infinite reverse;
+        //     box-shadow: 0 0 10px 1px #17fff3;
+        // }
+
+        // .star3 {
+        //     animation: Myphoto 2.5s linear .5s infinite reverse;
+        //     box-shadow: 0 0 10px 1px #17fff3;
+        // }
+
+        // .star4 {
+        //     animation: Myphoto 2.5s linear .75s infinite reverse;
+        //     box-shadow: 0 0 10px 1px #17fff3;
+        // }
+
+        // .star5 {
+        //     animation: Myphoto 2.5s linear 1s infinite reverse;
+        //     box-shadow: 0 0 10px 1px #17fff3;
+        // }
+
+        // .star6 {
+        //     animation: Myphoto 2.5s linear 1.25s infinite reverse;
+        //     box-shadow: 0 0 10px 1px #17fff3;
+        // }
+
+        // .star7 {
+        //     animation: Myphoto 2.5s linear 1.5s infinite reverse;
+        //     box-shadow: 0 0 10px 1px #17fff3;
+        // }
+
+        // .star8 {
+        //     animation: Myphoto 2.5s linear 1.75s infinite reverse;
+        //     box-shadow: 0 0 10px 1px #17fff3;
+        // }
+
+        // .star9 {
+        //     animation: Myphoto 2.5s linear 2s infinite reverse;
+        //     box-shadow: 0 0 10px 1px #17fff3;
+        // }
+
+        // .star10 {
+        //     animation: Myphoto 2.5s linear 2.25s infinite reverse;
+        //     box-shadow: 0 0 10px 1px #17fff3;
+        // }
+
+        // .star11 {
+        //     animation: Myphoto 2.5s linear 2.5s infinite reverse;
+        //     box-shadow: 0 0 10px 1px #17fff3;
+        // }
+
+        // .star12 {
+        //     animation: Myphoto 2.5s linear 2.5s infinite reverse;
+        //     box-shadow: 0 0 10px 1px #17fff3;
+        // }
+
+
+
+        small {
+            position: absolute;
+            left: 0;
         }
     }
 }
-.sidepar{
+
+.sidepar {
+    position: fixed;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    li{
-        a{
-            font-size: 20px;
-            width: 50px;
-            height: 50px;
+    margin-top: -45vh;
+
+    li {
+        backdrop-filter: blur(10px);
+        background-color: #ffffff;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 50%;
+
+        a {
+            text-align: center;
+            font-size: 15px;
             color: white;
-            background: rgba(0, 0, 0, 0.137);
+            background: $btnColor;
             padding: 10px;
             border-radius: 50%;
-            backdrop-filter: blur(5px);
+            transition: 300ms;
+            box-sizing: 0 0 20px #fff;
         }
-        a:hover{
-            color: #a70b59;
+
+        a:hover {
+            color: $btnColor;
+            text-shadow: 0 0 15px $btnColor;
+            background: rgb(255, 255, 255);
         }
     }
 
@@ -154,20 +274,12 @@
 
 
 @keyframes Myphoto {
-    0%{
-        border-radius: 50%  15%;
+    0% {
+        transform: rotate(360deg);
     }
-    25%{
-        border-radius:15% 50%;
+
+    100% {
+        transform: rotate(0deg);
     }
-    50%{
-        border-radius: 50% 15%;
-    }
-    75%{
-        border-radius:15% 50%;
-    }
-    100%{
-        border-radius:50% 15%;
-    }
-    
+
 }

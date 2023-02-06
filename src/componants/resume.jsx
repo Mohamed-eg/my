@@ -1,17 +1,17 @@
-import React from 'react'
-import Me from './supcomp/me'
-import Navtop from './supcomp/nav';
-import '../styles/resume.css';
+import React from "react";
+import Me from "./supcomp/me";
+import Navtop from "./supcomp/nav";
+import "../styles/resume.css";
 
-const Resume = () => {
+const Resume = (props) => {
   return (
-    <div className='resume'>
-      <Navtop/>
-      <div className='main'>
-        <Me/>
+    <div id="Home" className="resume">
+      <Navtop  scrollTop={props.scrollTop}/>
+      <div className="main">
+        <Me />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Resume
+export default Resume;
