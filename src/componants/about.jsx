@@ -1,35 +1,41 @@
 import React from "react";
 import "../styles/about.css";
 import Myav from "../img/my-avatar.png";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export default function About(props) {
+  const aboutRef = useRef();
+  const aboutRef2 = useRef();
+  const aboutRef3 = useRef();
   const [IMoved, setIMoved] = useState({
     squer1: "",
     squer2: "",
     squer3: "",
   });
-  const handelScroll=(x)=>{
-    if (x > 200)
-      { setIMoved({squer1:"IMoved",squer2:"",squer3:"" })
-        if (x > 450)
-        {setIMoved({ squer1:"IMoved", squer2: "IMoved", squer3:"" })
-        console.log(IMoved)
-           if (x > 650)
-           {setIMoved({ squer1:"IMoved", squer2: "IMoved", squer3: "IMoved" })
-          } else{setIMoved({ squer1:"IMoved", squer2: "IMoved", squer3: "" })}
+  const handelScroll = (x) => {
+    if (x > aboutRef.current.offsetTop - window.screen.availHeight / 2) {
+      setIMoved({ squer1: "IMoved", squer2: "", squer3: "" });
+      if (x > aboutRef2.current.offsetTop - window.screen.availHeight / 2) {
+        setIMoved({ squer1: "IMoved", squer2: "IMoved", squer3: "" });
+        console.log(aboutRef.current);
+        if (x > aboutRef3.current.offsetTop - window.screen.availHeight / 2) {
+          setIMoved({ squer1: "IMoved", squer2: "IMoved", squer3: "IMoved" });
+        } else {
+          setIMoved({ squer1: "IMoved", squer2: "IMoved", squer3: "" });
         }
-      else{setIMoved({squer1:"IMoved", squer2: "",squer3: ""  })}
-      } 
-  else {setIMoved({  squer1: "",squer2: ""  ,squer3: ""  })}
-
-  }
+      } else {
+        setIMoved({ squer1: "IMoved", squer2: "", squer3: "" });
+      }
+    } else {
+      setIMoved({ squer1: "", squer2: "", squer3: "" });
+    }
+  };
   useEffect(() => {
-    handelScroll(props.scrollTop)
+    handelScroll(props.scrollTop);
   }, [props.scrollTop]);
 
   return (
-    <div id="About" className="Sec2">
+    <div id="About" ref={aboutRef} className="Sec2">
       <div className={`I aboutSec ${IMoved.squer1}`}>
         <div className="My_av">
           <img src={Myav}></img>
@@ -42,7 +48,7 @@ export default function About(props) {
         </div>
       </div>
 
-      <div className={`aboutSec aboutLeft ${IMoved.squer2}`}>
+      <div ref={aboutRef2} className={`aboutSec aboutLeft ${IMoved.squer2}`}>
         <h1> About_Me </h1>
         <div>
           <p>
@@ -59,7 +65,7 @@ export default function About(props) {
           </p>
         </div>
       </div>
-      <div className={`doing doingRight ${IMoved.squer3}`}>
+      <div ref={aboutRef3} className={`doing doingRight ${IMoved.squer3}`}>
         <h1> What I'm Doing </h1>
         <div className="my_doing">
           <div>

@@ -8,8 +8,8 @@
 .Sec2 .aboutSec,
 .Sec2 .doing {
   position: relative;
-  -webkit-transition: all .5s linear .25s;
-  transition: all .5s linear .25s;
+  -webkit-transition: all .5s linear 0s;
+  transition: all .5s linear 0s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,16 +61,14 @@
 
 .doingRight {
   left: -130%;
-  -webkit-transition: .5s;
-  transition: .5s;
-  -webkit-box-shadow: 0 0 5px #ff92d2;
-          box-shadow: 0 0 5px #ff92d2;
+  -webkit-box-shadow: 0 0 5px #fb5db9;
+          box-shadow: 0 0 5px #fb5db9;
 }
 
 .aboutLeft {
   left: -130%;
-  -webkit-box-shadow: 0 0 5px #ff92d2;
-          box-shadow: 0 0 5px #ff92d2;
+  -webkit-box-shadow: 0 0 5px #fb5db9;
+          box-shadow: 0 0 5px #fb5db9;
 }
 
 .I {
@@ -84,8 +82,8 @@
           flex-direction: row !important;
   z-index: 0;
   top: -40vh;
-  -webkit-box-shadow: 0 0 5px #ff92d2;
-          box-shadow: 0 0 5px #ff92d2;
+  -webkit-box-shadow: 0 0 5px #fb5db9;
+          box-shadow: 0 0 5px #fb5db9;
 }
 
 .I .my_info {
@@ -132,8 +130,8 @@
 
 .I .My_av:hover {
   background-color: #ff30a9;
-  -webkit-box-shadow: 0 0 10px 1px #ff4ae7;
-          box-shadow: 0 0 10px 1px #ff4ae7;
+  -webkit-box-shadow: 0 0 10px 1px #fb5db9;
+          box-shadow: 0 0 10px 1px #fb5db9;
 }
 
 .IMoved {

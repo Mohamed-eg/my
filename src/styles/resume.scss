@@ -74,12 +74,12 @@
                     cursor: pointer;
                     background: rgba(0, 0, 0, 0.199);
                     z-index: 3;
-                    box-shadow: 0px 5px 10px 2px #110009, inset 0 -5px 10px rgba(255, 255, 255, 0.411);
+                    box-shadow: 0px 2px 5px 2px $shadoColor, inset 0 -2px 5px rgba(255, 255, 255, 0.411);
                     backdrop-filter: blur(10px);
                     transition: .3s;
                     text-align: center;
                     transform: translate(-50%);
-                }
+                } 
 
                 .visited {
                     background: #fff;
@@ -112,7 +112,10 @@
         justify-content: flex-end;
         align-items: center;
         flex-direction: row-reverse;
-        padding: 0 10px;
+        
+        div:nth-child(2){
+            padding: 0 40px;
+        }
         div:nth-child(1) {
             display: flex;
             justify-content: center;
@@ -273,13 +276,22 @@
 }
 
 
-@keyframes Myphoto {
-    0% {
-        transform: rotate(360deg);
-    }
+// @keyframes Myphoto {
+//     0% {
+//         transform: rotate(360deg);
+//     }
 
-    100% {
-        transform: rotate(0deg);
-    }
+//     100% {
+//         transform: rotate(0deg);
+//     }
 
+// }
+@media only screen and (max-width: 1200px) {
+    .Me{
+        padding: 10px;
+        big{
+            flex-direction: column !important;  
+        }
+    }
+    
 }

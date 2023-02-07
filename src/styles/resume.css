@@ -107,8 +107,8 @@
   cursor: pointer;
   background: rgba(0, 0, 0, 0.199);
   z-index: 3;
-  -webkit-box-shadow: 0px 5px 10px 2px #110009, inset 0 -5px 10px rgba(255, 255, 255, 0.411);
-          box-shadow: 0px 5px 10px 2px #110009, inset 0 -5px 10px rgba(255, 255, 255, 0.411);
+  -webkit-box-shadow: 0px 2px 5px 2px rgba(27, 27, 27, 0.8), inset 0 -2px 5px rgba(255, 255, 255, 0.411);
+          box-shadow: 0px 2px 5px 2px rgba(27, 27, 27, 0.8), inset 0 -2px 5px rgba(255, 255, 255, 0.411);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   -webkit-transition: .3s;
@@ -165,7 +165,10 @@
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  padding: 0 10px;
+}
+
+.resume .Me big div:nth-child(2) {
+  padding: 0 40px;
 }
 
 .resume .Me big div:nth-child(1) {
@@ -289,25 +292,15 @@
   background: white;
 }
 
-@-webkit-keyframes Myphoto {
-  0% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+@media only screen and (max-width: 1200px) {
+  .Me {
+    padding: 10px;
   }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-
-@keyframes Myphoto {
-  0% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+  .Me big {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
   }
 }
 /*# sourceMappingURL=resume.css.map */

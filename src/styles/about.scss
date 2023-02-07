@@ -9,7 +9,7 @@
     .aboutSec,
     .doing {
         position: relative;
-        transition: all .5s linear .25s;
+        transition: all .5s linear 0s;
         display: flex;
         margin: 10px 0;
         justify-content: center;
@@ -48,13 +48,12 @@
 
 .doingRight {
     left: -130%;
-    transition: .5s;
-    box-shadow: 0 0 5px rgb(255, 146, 210);
+    box-shadow: 0 0 5px $gluwColor;
 }
 
 .aboutLeft {
     left: -130%;
-    box-shadow: 0 0 5px rgb(255, 146, 210);
+    box-shadow: 0 0 5px $gluwColor;
 }
 
 .I {
@@ -63,7 +62,7 @@
     flex-direction: row !important;
     z-index: 0;
     top: -40vh;
-    box-shadow: 0 0 5px rgb(255, 146, 210);
+    box-shadow: 0 0 5px $gluwColor;
 
     .my_info {
         display: flex;
@@ -95,7 +94,7 @@
 
     .My_av:hover {
         background-color: rgb(255, 48, 169);
-        box-shadow: 0 0 10px 1px rgb(255, 74, 231);
+        box-shadow: 0 0 10px 1px $gluwColor;
     }
 }
 
