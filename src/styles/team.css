@@ -1,0 +1,15 @@
+.TeamSec {
+  width: 100%;
+  background-color: #f598a4;
+}
+
+.slidcountaner {
+  margin: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #f88191;
+  background: radial-gradient(#f598a4, #ffdde1);
+  -webkit-box-shadow: 0 0 5px #fff;
+          box-shadow: 0 0 5px #fff;
+}
+/*# sourceMappingURL=team.css.map */

@@ -5,7 +5,7 @@ import About from "./componants/about";
 import Resume from "./componants/resume";
 import anime from "animejs/lib/anime.es.js";
 import React, { useEffect, useState, useRef } from "react";
-import Jops from "./componants/jops";
+import Team from "./componants/team";
 
 function App() {
   const [scrollTop, setScrollTop] = useState(0);
@@ -49,7 +49,7 @@ function App() {
       <div ref={appref} className="App">
         <Resume scrollTop={scrollTop} />
         <About scrollTop={scrollTop}></About>
-        <Jops></Jops>
+        <Team />
         {/* <ReactLoading type="cylon" color="#0000FF" 
         height={'50vh'} width={'50vw'} /> */}
       </div>

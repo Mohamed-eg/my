@@ -1,0 +1,13 @@
+@import "./var";
+.TeamSec{
+    width: 100%;
+    background-color: $mainColor;
+}
+.slidcountaner{
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid $porderColor;
+    background: radial-gradient($mainColor,$mainColor2);
+    box-shadow: 0 0 5px #fff;
+}

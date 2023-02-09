@@ -149,6 +149,7 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 30px;
+  position: relative;
 }
 
 .resume .Me big {
@@ -195,7 +196,7 @@
 
 .resume .Me big div:nth-child(1) .star img {
   margin-top: 50px;
-  height: 310px;
+  height: 300px;
   -webkit-filter: drop-shadow(0px 10px 5px rgba(27, 27, 27, 0.8)) saturate(0.7);
           filter: drop-shadow(0px 10px 5px rgba(27, 27, 27, 0.8)) saturate(0.7);
   z-index: 3;
@@ -204,7 +205,7 @@
 .resume .Me big div:nth-child(1) .star .backggrondForimg {
   position: absolute;
   margin-top: 50px;
-  padding: 155px;
+  padding: 150px;
   border-radius: 50%;
   background: radial-gradient(#f598a4, #ffdde1);
   -webkit-box-shadow: 0 0 3px rgba(27, 27, 27, 0.8), inset 0 0 3px rgba(27, 27, 27, 0.8);
@@ -237,11 +238,12 @@
 .resume .Me small {
   position: absolute;
   left: 0;
+  top: 0;
 }
 
-.sidepar {
+.resume .Me small .sidepar {
   position: fixed;
-  height: 100vh;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,15 +253,15 @@
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: -45vh;
+  margin-top: 10vh;
 }
 
-.sidepar li {
+.resume .Me small .sidepar li {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   background-color: #ffffff;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -273,34 +275,38 @@
   border-radius: 50%;
 }
 
-.sidepar li a {
+.resume .Me small .sidepar li a {
   text-align: center;
-  font-size: 15px;
+  font-size: 12px;
   color: white;
   background: #ff7283;
-  padding: 10px;
+  padding: 8px;
   border-radius: 50%;
   -webkit-transition: 300ms;
   transition: 300ms;
-  -webkit-box-sizing: 0 0 20px #fff;
-          box-sizing: 0 0 20px #fff;
 }
 
-.sidepar li a:hover {
+.resume .Me small .sidepar li a:hover {
   color: #ff7283;
   text-shadow: 0 0 15px #ff7283;
   background: white;
 }
 
-@media only screen and (max-width: 1200px) {
-  .Me {
+@media only screen and (max-width: 900px) {
+  .resume .Me {
     padding: 10px;
   }
-  .Me big {
+  .resume .Me big {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
+  }
+  .resume .Me big div:nth-child(1) .star img {
+    height: 200px !important;
+  }
+  .resume .Me big div:nth-child(1) .backggrondForimg {
+    padding: 100px !important;
   }
 }
 /*# sourceMappingURL=resume.css.map */

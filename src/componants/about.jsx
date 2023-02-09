@@ -17,7 +17,6 @@ export default function About(props) {
       setIMoved({ squer1: "IMoved", squer2: "", squer3: "" });
       if (x > aboutRef2.current.offsetTop - window.screen.availHeight / 2) {
         setIMoved({ squer1: "IMoved", squer2: "IMoved", squer3: "" });
-        console.log(aboutRef.current);
         if (x > aboutRef3.current.offsetTop - window.screen.availHeight / 2) {
           setIMoved({ squer1: "IMoved", squer2: "IMoved", squer3: "IMoved" });
         } else {
