@@ -2,6 +2,7 @@
 .TeamSec{
     width: 100%;
     background-color: $mainColor;
+    padding: $sectionPading;
 }
 .slidcountaner{
     margin: 30px;
@@ -9,5 +10,6 @@
     border-radius: 10px;
     border: 1px solid $porderColor;
     background: radial-gradient($mainColor,$mainColor2);
-    box-shadow: 0 0 5px #fff;
+    box-shadow: 0 0 5px $shadoColor;
+    backdrop-filter: blur(3px);
 }

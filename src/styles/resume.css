@@ -20,10 +20,12 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  background-color: #f598a4;
+  background-color: #292c3590;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  color: #fff;
+  position: relative;
 }
 
 .resume .main {
@@ -37,13 +39,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: radial-gradient(#ffdde1, #f598a4);
+  background: radial-gradient(#37384290, #292c3590);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 2;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
 }
 
 .resume nav {
@@ -57,9 +61,10 @@
   width: 100%;
   height: 10px;
   position: fixed;
+  top: 0;
   -webkit-box-shadow: 0 0 3px rgba(27, 27, 27, 0.8), inset 0px -1px 3px rgba(27, 27, 27, 0.8);
           box-shadow: 0 0 3px rgba(27, 27, 27, 0.8), inset 0px -1px 3px rgba(27, 27, 27, 0.8);
-  background: #ffdde1;
+  background: #37384290;
   z-index: 5;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -68,7 +73,7 @@
 }
 
 .resume nav .transNAv {
-  background: rgba(255, 255, 255, 0.4);
+  background: #37384290;
   height: 20px;
 }
 
@@ -89,6 +94,7 @@
   height: 30px;
   background: rgba(255, 255, 255, 0);
   position: fixed;
+  top: 0%;
   color: #fff;
   z-index: 4;
 }
@@ -197,6 +203,7 @@
 .resume .Me big div:nth-child(1) .star img {
   margin-top: 50px;
   height: 300px;
+  border-radius: 50% 50%;
   -webkit-filter: drop-shadow(0px 10px 5px rgba(27, 27, 27, 0.8)) saturate(0.7);
           filter: drop-shadow(0px 10px 5px rgba(27, 27, 27, 0.8)) saturate(0.7);
   z-index: 3;
@@ -207,7 +214,7 @@
   margin-top: 50px;
   padding: 150px;
   border-radius: 50%;
-  background: radial-gradient(#f598a4, #ffdde1);
+  background: radial-gradient(#292c3590, #37384290);
   -webkit-box-shadow: 0 0 3px rgba(27, 27, 27, 0.8), inset 0 0 3px rgba(27, 27, 27, 0.8);
           box-shadow: 0 0 3px rgba(27, 27, 27, 0.8), inset 0 0 3px rgba(27, 27, 27, 0.8);
 }
@@ -215,7 +222,7 @@
 .resume .Me big h1 {
   font-family: 'Tangerine', serif;
   font-size: 48px;
-  text-shadow: 2px 2px 4px #dddddd;
+  text-shadow: 2px 2px 4px rgba(27, 27, 27, 0.8);
 }
 
 .resume .Me big span {
@@ -226,23 +233,9 @@
   text-align: center;
 }
 
-.resume .Me .starb {
-  width: 250px;
-  height: 250px;
-  position: absolute;
-  background: #fff;
-  z-index: 1;
-  top: 80px;
-}
-
-.resume .Me small {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
 .resume .Me small .sidepar {
   position: fixed;
+  margin-top: 20px;
   height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -251,15 +244,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 10vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .resume .Me small .sidepar li {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  background-color: #ffffff;
+  background-color: #fff;
   width: 30px;
   height: 30px;
   display: -webkit-box;
@@ -278,8 +271,8 @@
 .resume .Me small .sidepar li a {
   text-align: center;
   font-size: 12px;
-  color: white;
-  background: #ff7283;
+  color: #fff;
+  background: #000000;
   padding: 8px;
   border-radius: 50%;
   -webkit-transition: 300ms;
@@ -287,9 +280,9 @@
 }
 
 .resume .Me small .sidepar li a:hover {
-  color: #ff7283;
-  text-shadow: 0 0 15px #ff7283;
-  background: white;
+  color: #000000;
+  text-shadow: 0 0 15px #000000;
+  background: #fff;
 }
 
 @media only screen and (max-width: 900px) {

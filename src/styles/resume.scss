@@ -14,7 +14,8 @@
     width: 100%;
     background-color: $mainColor;
     height: max-content;
-
+    color: $fontColor;
+    position: relative;
     .main {
         width: 100%;
         display: flex;
@@ -25,16 +26,17 @@
         background-size: cover;
         z-index: 2;
         height: max-content;
+        backdrop-filter: blur(3px);
     }
 
     nav {
         width: 100%;
-
         .UPUL {
             display: flex;
             width: 100%;
             height: 10px;
             position: fixed;
+            top: 0;
             box-shadow: 0 0 3px $shadoColor, inset 0px -1px 3px $shadoColor;
             background: $mainColor2;
             z-index: 5;
@@ -43,7 +45,7 @@
         }
 
         .transNAv {
-            background: rgba(255, 255, 255, 0.4);
+            background: $mainColor2;
             height: 20px;
         }
 
@@ -57,6 +59,7 @@
             height: 30px;
             background: rgba(255, 255, 255, 0);
             position: fixed;
+            top: 0%;
             color: $fontColor;
 
             z-index: 4;
@@ -67,7 +70,7 @@
                 a {
                     top: 0;
                     text-decoration: none;
-                    color: #fff;
+                    color: $fontColor;
                     position: fixed;
                     padding: 20px 5px 10px 5px;
                     border-radius: 2px 2px 15px 15px;
@@ -129,10 +132,10 @@
             img {
                 margin-top: $img-marjen;
                 height: $img-hight;
-                // border-radius: 50% 50%;
+                border-radius: 50% 50%;
                 filter: drop-shadow(0px 10px 5px $shadoColor) saturate(.7);
                 z-index: 3;
-                // background:radial-gradient(rgb(128, 255, 0),rgb(0, 128, 255));
+                
             }
             .backggrondForimg{
                 position: absolute;
@@ -147,7 +150,7 @@
         } h1 {
                 font-family: 'Tangerine', serif;
                 font-size: 48px;
-                text-shadow: 2px 2px 4px rgb(221, 221, 221);
+                text-shadow: 2px 2px 4px $shadoColor;
             }
 
             span {
@@ -158,93 +161,21 @@
                 text-align: center;
             }
         }
-        .starb {
-            // border-radius: 20% 50%;
-            width: 250px;
-            height: 250px;
-            position: absolute;
-            background: #fff;
-            z-index: 1;
-            top: 80px;
-        }
-
-        // .star1 {
-        //     animation: Myphoto 2.5s linear 0s infinite reverse;
-        //     box-shadow: 0 0 10px 1px #17fff3;
-        // }
-
-        // .star2 {
-        //     animation: Myphoto 2.5s linear .25s infinite reverse;
-        //     box-shadow: 0 0 10px 1px #17fff3;
-        // }
-
-        // .star3 {
-        //     animation: Myphoto 2.5s linear .5s infinite reverse;
-        //     box-shadow: 0 0 10px 1px #17fff3;
-        // }
-
-        // .star4 {
-        //     animation: Myphoto 2.5s linear .75s infinite reverse;
-        //     box-shadow: 0 0 10px 1px #17fff3;
-        // }
-
-        // .star5 {
-        //     animation: Myphoto 2.5s linear 1s infinite reverse;
-        //     box-shadow: 0 0 10px 1px #17fff3;
-        // }
-
-        // .star6 {
-        //     animation: Myphoto 2.5s linear 1.25s infinite reverse;
-        //     box-shadow: 0 0 10px 1px #17fff3;
-        // }
-
-        // .star7 {
-        //     animation: Myphoto 2.5s linear 1.5s infinite reverse;
-        //     box-shadow: 0 0 10px 1px #17fff3;
-        // }
-
-        // .star8 {
-        //     animation: Myphoto 2.5s linear 1.75s infinite reverse;
-        //     box-shadow: 0 0 10px 1px #17fff3;
-        // }
-
-        // .star9 {
-        //     animation: Myphoto 2.5s linear 2s infinite reverse;
-        //     box-shadow: 0 0 10px 1px #17fff3;
-        // }
-
-        // .star10 {
-        //     animation: Myphoto 2.5s linear 2.25s infinite reverse;
-        //     box-shadow: 0 0 10px 1px #17fff3;
-        // }
-
-        // .star11 {
-        //     animation: Myphoto 2.5s linear 2.5s infinite reverse;
-        //     box-shadow: 0 0 10px 1px #17fff3;
-        // }
-
-        // .star12 {
-        //     animation: Myphoto 2.5s linear 2.5s infinite reverse;
-        //     box-shadow: 0 0 10px 1px #17fff3;
-        // }
-
 
 
         small {
-            position: absolute;
-            left: 0;
-            top: 0;
         .sidepar {
             position: fixed;
+            margin-top: 20px;
             height: 80vh;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
-            margin-top: 10vh;
+            justify-content: space-evenly;
+            
 
             li {
                 backdrop-filter: blur(10px);
-                background-color: #ffffff;
+                background-color: $fontColor;
                 width: 30px;
                 height: 30px;
                 display: flex;
@@ -256,7 +187,7 @@
                 a {
                     text-align: center;
                     font-size: 12px;
-                    color: white;
+                    color: $fontColor;
                     background: $btnColor;
                     padding: 8px;
                     border-radius: 50%;
@@ -266,7 +197,7 @@
                 a:hover {
                     color: $btnColor;
                     text-shadow: 0 0 15px $btnColor;
-                    background: rgb(255, 255, 255);
+                    background: $fontColor;
                 }
             }
 
@@ -275,39 +206,6 @@
     }
 }
 
-
-
-
-// @keyframes Myphoto {
-//     0% {
-//         transform: rotate(360deg);
-//     }
-
-//     100% {
-//         transform: rotate(0deg);
-//     }
-
-// }
-// @media only screen and (max-width: 1200px) {
-//     .resume{.Me{
-//         padding: 10px;
-//         big{
-//             flex-direction: column !important;  
-//             div:nth-child(1){
-//                 .star{
-//                     img{
-//                         height: $img-tab-hight !important;
-//                     }
-//                 }
-//                 .backggrondForimg{
-//                     padding: $img-tab-hight/2 !important;
-//                 }
-//             }
-//         }
-//     }}
-    
-    
-// }
 @media only screen and (max-width: 900px) {
     .resume{
             .Me{
@@ -325,11 +223,6 @@
                 }
             }
         }
-        // small{
-        //     .sidepar{
-        //         margin-top:-40vh !important;
-        //     }
-        // }
     }
     }
 

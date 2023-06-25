@@ -1,5 +1,5 @@
 import React from "react";
-import me from "../../img/1662506224694_1.png";
+import me from "../../img/MyPhoto.png";
 const Me = () => {
   return (
     <div className="Me">
@@ -43,20 +43,6 @@ const Me = () => {
             <img src={me} />
             <div className="backggrondForimg"></div>
           </div>
-          {/* <div className="Allqupec">
-            <div className="star1 starb"></div>
-            <div className="star2 starb"></div>
-            <div className="star3 starb"></div>
-            <div className="star4 starb"></div>
-            <div className="star5 starb"></div>
-            <div className="star6 starb"></div>
-            <div className="star7 starb"></div>
-            <div className="star8 starb"></div>
-            <div className="star9 starb"></div>
-            <div className="star10 starb"></div>
-            <div className="star11 starb"></div>
-            <div className="star12 starb"></div>
-          </div> */}
         </div>
         <div>
           <h1>

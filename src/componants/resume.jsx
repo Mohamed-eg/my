@@ -6,7 +6,7 @@ import "../styles/resume.css";
 const Resume = (props) => {
   return (
     <div id="Home" className="resume">
-      <Navtop  scrollTop={props.scrollTop}/>
+      <Navtop scrollTop={props.scrollTop} />
       <div className="main">
         <Me />
       </div>

@@ -1,15 +1,18 @@
 .TeamSec {
   width: 100%;
-  background-color: #f598a4;
+  background-color: #292c3590;
+  padding: 60px;
 }
 
 .slidcountaner {
   margin: 30px;
   padding: 20px;
   border-radius: 10px;
-  border: 1px solid #f88191;
-  background: radial-gradient(#f598a4, #ffdde1);
-  -webkit-box-shadow: 0 0 5px #fff;
-          box-shadow: 0 0 5px #fff;
+  border: 1px solid #1d1d1d;
+  background: radial-gradient(#292c3590, #37384290);
+  -webkit-box-shadow: 0 0 5px rgba(27, 27, 27, 0.8);
+          box-shadow: 0 0 5px rgba(27, 27, 27, 0.8);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
 }
 /*# sourceMappingURL=team.css.map */

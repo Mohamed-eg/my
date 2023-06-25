@@ -6,7 +6,7 @@ import Resume from "./componants/resume";
 import anime from "animejs/lib/anime.es.js";
 import React, { useEffect, useState, useRef } from "react";
 import Team from "./componants/team";
-
+import FrontPage from "./componants/FrontPage";
 function App() {
   const [scrollTop, setScrollTop] = useState(0);
   const lodingRef = useRef();
@@ -47,11 +47,10 @@ function App() {
         <Lodingpag />
       </div>
       <div ref={appref} className="App">
+        <FrontPage />
         <Resume scrollTop={scrollTop} />
         <About scrollTop={scrollTop}></About>
         <Team />
-        {/* <ReactLoading type="cylon" color="#0000FF" 
-        height={'50vh'} width={'50vw'} /> */}
       </div>
     </React.Fragment>
   );
