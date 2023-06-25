@@ -32,7 +32,7 @@
     transition: all 0.3s ease;
     z-index: 3;
   }
-  h1:hover {
+  .frontH1:hover {
     transform: translate3d(0, -10px, 22px);
     color: #ff0266;
   }
@@ -53,7 +53,7 @@
     color: #faebd7;
     z-index: 4;
   }
-  span:hover {
+  h3 span:hover {
     color: #ff0266;
     font-weight: 500;
     font-size: 2.2vw;
@@ -111,15 +111,6 @@
     background: #03dac6;
     transition: left 0.3s ease;
   }
-  .background {
-    position: absolute;
-    height: 90vh;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: auto;
-  }
   @media (min-width: 800px) {
     .nav h1,
     .slider h1 {
@@ -151,15 +142,6 @@
     .nav-tab {
       font-size: 1.2vw;
     }
-  }
-  .background {
-    position: absolute;
-    height: 100vh;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 0;
   }
   .loader span {
     color: #faebd7;

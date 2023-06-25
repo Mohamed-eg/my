@@ -302,4 +302,30 @@
     padding: 100px !important;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .resume .Me {
+    padding: 10px;
+  }
+  .resume .Me big {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .resume .Me big h1 {
+    margin: 15px 0 0 0;
+    font-size: 30px;
+    text-align: center;
+  }
+  .resume .Me big p {
+    font-size: 15px;
+  }
+  .resume .Me big div:nth-child(1) .star img {
+    height: 200px !important;
+  }
+  .resume .Me big div:nth-child(1) .backggrondForimg {
+    padding: 100px !important;
+  }
+}
 /*# sourceMappingURL=resume.css.map */

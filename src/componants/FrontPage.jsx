@@ -47,8 +47,8 @@ const FrontPage = () => {
                 quantity: 4,
               },
               repulse: {
-                distance: 100,
-                duration: 0.2,
+                distance: 200,
+                duration: 2,
               },
             },
           },
@@ -97,7 +97,7 @@ const FrontPage = () => {
         }}
       />
       <section className="nav">
-        <h1>FRONTEND TRENDS</h1>
+        <h1 className="frontH1">FRONTEND TRENDS</h1>
         <h3 className="span loader">
           <span className="m">B</span>
           <span className="m">E</span>
@@ -125,7 +125,6 @@ const FrontPage = () => {
           <span className="m">S</span>
         </h3>
       </section>
-      <canvas className="background"></canvas>
     </>
   );
 };
