@@ -37,13 +37,12 @@ export default function About(props) {
     <div id="About" ref={aboutRef} className="Sec2">
       <div className={`I aboutSec ${IMoved.squer1}`}>
         <div className="My_av">
-          <img src={Myav}></img>
+          <img alt="avatar" src={Myav}></img>
         </div>
 
         <div className={`my_info`}>
           <h3>Mohamed_Elshyab</h3>
           <span>Web developer</span>
-          <span>{props.scrollTop}</span>
         </div>
       </div>
 
@@ -74,17 +73,14 @@ export default function About(props) {
               level.
             </p>
           </div>
-          <img></img>
         </div>
         <div className="my_doing">
-          <img></img>
           <div>
             <h3>Web Development</h3>
             <p>High-quality development of sites at the professional level.</p>
           </div>
         </div>
         <div className="my_doing">
-          <img></img>
           <div>
             <h3>Mobile Apps</h3>
             <p>
@@ -94,7 +90,6 @@ export default function About(props) {
           </div>
         </div>
         <div className="my_doing">
-          <img></img>
           <div>
             <h3>Photography</h3>
             <p>

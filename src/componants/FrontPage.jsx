@@ -29,7 +29,7 @@ const FrontPage = () => {
               value: "#373842",
             },
           },
-          fpsLimit: 60,
+          fpsLimit: 120,
           interactivity: {
             events: {
               onClick: {
@@ -48,7 +48,7 @@ const FrontPage = () => {
               },
               repulse: {
                 distance: 200,
-                duration: 2,
+                duration: 0.4,
               },
             },
           },

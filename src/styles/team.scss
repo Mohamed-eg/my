@@ -12,4 +12,10 @@
     background: radial-gradient($mainColor,$mainColor2);
     box-shadow: 0 0 5px $shadoColor;
     backdrop-filter: blur(3px);
+    color: $fontColor;
+}
+@media only screen and (max-width: 500px) {
+    .TeamSec{
+        padding: $sectionPadingMin;
+    }
 }
