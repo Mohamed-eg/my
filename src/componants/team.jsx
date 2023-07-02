@@ -1,6 +1,5 @@
 import React from "react";
-import "../styles/team.css";
-import { Pagination, Scrollbar, A11y } from "swiper";
+import { Pagination, Scrollbar, A11y, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -17,7 +16,8 @@ export default function Team() {
       <div>
         <Swiper
           // install Swiper modules
-          modules={[Pagination, Scrollbar, A11y]}
+          modules={[Pagination, Scrollbar, A11y, Autoplay]}
+          autoplay={{ delay: 2000 }}
           spaceBetween={50}
           slidesPerView={1}
           pagination={{ clickable: true }}
@@ -116,7 +116,6 @@ export default function Team() {
               </div>
             </div>
           </SwiperSlide>
-          ...
         </Swiper>
       </div>
     </div>

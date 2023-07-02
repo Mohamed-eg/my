@@ -1,0 +1,55 @@
+// _jobs-page.scss
+@import "_var";
+
+.jobs-container {
+  color: $fontColor;
+  background-color: $mainColor0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .job-item {
+    margin-bottom: 20px;
+    border: 1px solid $fontColor;
+    padding: 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 5px;
+
+      &.duration {
+        font-size: 14px;
+        opacity: 0.8;
+      }
+
+      &.description {
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .jobs-container {
+    .job-item {
+      padding: 10px;
+    }
+  }
+}

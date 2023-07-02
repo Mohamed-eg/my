@@ -1,4 +1,4 @@
-import "./App.css";
+import "./styles/All.css";
 // import ReactLoading from "react-loading";
 import Lodingpag from "./componants/lodingpag";
 import About from "./componants/about";
@@ -7,6 +7,7 @@ import anime from "animejs/lib/anime.es.js";
 import React, { useEffect, useState, useRef } from "react";
 import Team from "./componants/team";
 import FrontPage from "./componants/FrontPage";
+import Jops from "./componants/jobs";
 function App() {
   const [scrollTop, setScrollTop] = useState(0);
   const lodingRef = useRef();
@@ -51,6 +52,7 @@ function App() {
         <Resume scrollTop={scrollTop} />
         <About scrollTop={scrollTop}></About>
         <Team />
+        <Jops />
       </div>
     </React.Fragment>
   );

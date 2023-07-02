@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/about.css";
 import Myav from "../img/my-avatar.png";
 import { useEffect, useState, useRef } from "react";
 

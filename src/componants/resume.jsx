@@ -1,7 +1,6 @@
 import React from "react";
 import Me from "./supcomp/me";
 import Navtop from "./supcomp/nav";
-import "../styles/resume.css";
 
 const Resume = (props) => {
   return (
